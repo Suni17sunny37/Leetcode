@@ -1,0 +1,15 @@
+class Solution:
+    def average(self, salary: List[int]) -> float:
+        mi=min(salary)
+        ma=max(salary)
+        av=0
+        c=0
+        for i in salary:
+            if i==ma or i==mi:
+                continue
+            else:
+                av+=i
+                c+=1
+        return av/c
+                
+        
